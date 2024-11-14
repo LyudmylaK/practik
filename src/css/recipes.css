@@ -1,0 +1,33 @@
+.recipes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.recipes-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(25, 132, 132, 0.482);
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  min-height: 300px;
+  background-color: aquamarine;
+}
